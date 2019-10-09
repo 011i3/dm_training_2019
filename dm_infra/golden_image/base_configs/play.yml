@@ -2,6 +2,7 @@
 - hosts: 127.0.0.1
 
   tasks: 
-    - name: Some task 
-      shell: 
-
+    - name: Create a login user
+       user:
+        name: ansible
+        password: 'ansible'
